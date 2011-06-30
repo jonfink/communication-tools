@@ -1,0 +1,18 @@
+<package>
+  <description brief="communication_predict">
+
+     communication_predict
+
+  </description>
+  <author>Jon Fink</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/communication_predict</url>
+  <depend package="CommsSimulation"/>
+  <depend package="nav_msgs"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix} -L${prefix}/lib -lCommunicationPredict"/>
+  </export>
+
+</package>

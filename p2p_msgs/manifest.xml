@@ -1,0 +1,13 @@
+<package>
+  <description brief="p2p_msgs">Messages for dealing with p2p devices (zigbee, bluetooth, ...)
+  </description>
+  <author>Jon Fink/ jonfink@grasp.upenn.edu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depends package="std_msgs"/>
+  <export>
+    <cpp cflags="-I${prefix}/msg/cpp"/>
+  </export>
+</package>
+
+

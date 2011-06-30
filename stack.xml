@@ -1,0 +1,9 @@
+<stack>
+  <description brief="communication-tools">communication-tools</description>
+  <author>Maintained by Jon Fink</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/communication-tools</url>
+  <depend stack="ros" />
+
+</stack>

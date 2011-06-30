@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="map_server" 
+	name="map" 
+	type="map_server" 
+	output="screen" 
+	args="$(find CommsSimulation)/maps/levine_towne_map.yaml"/>
+</launch>

@@ -1,0 +1,16 @@
+import os
+
+env = Environment (
+  CC = 'g++',
+  CPPFLAGS = '-ggdb'
+)
+
+env.SharedLibrary('commsSimulatorBasicRangeModel', ['commsSimulatorBase.cc',
+                                                    'commsSimulatorBasicRangeModel.cc'])
+
+env.SharedLibrary('commsSimulatorBasicRadioModel', ['commsSimulatorBase.cc',
+                                                    'commsSimulatorBasicRadioModel.cc'])
+
+env.Program('testclass', 'testclass.cc', 
+            LIBS = ['commsSimulatorBasicRangeModel'], LIBPATH='.')
+

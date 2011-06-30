@@ -1,0 +1,24 @@
+<launch>
+ <param name="tx_power" value="0.0"/>
+  <param name="L0" value="40.0"/>
+  <param name="fading_exp" value="6.5"/>
+  <param name="wall_PL" value="10.0"/>
+  <param name="rx_sensitivity" value="-90.0"/>
+  <param name="noise_power" value="-60"/>
+  <param name="fading_variance" value="30"/>
+  <param name="cutoff_rate" value="0.0185306"/>
+
+  <param name="num_nodes" value="3"/>
+  <param name="name0" value="node0"/> <param name="address0" value="10"/>
+  <param name="name1" value="node1"/> <param name="address1" value="11"/>
+  <param name="name2" value="node2"/> <param name="address2" value="12"/>
+
+  <node pkg="map_server"
+	name="map"
+	type="map_server"
+	output="screen"
+	args="$(find communication_simulator)/maps/levine_towne_map.yaml"/>
+
+  <node pkg="communication_simulator" type="sim_basic_radio_node" name="CommsSim" output="screen" respawn="false">
+ </node>
+</launch>

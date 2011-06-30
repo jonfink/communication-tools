@@ -1,0 +1,20 @@
+<package>
+  <description brief="CommsSimulation">
+     CommsSimulation library
+  </description>
+  <author>Jon Fink</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="roscpp" />
+  <depend package="p2p_msgs" />
+  <depend package="tf" />
+  <depend package="geometry_msgs" />
+  <depend package="nav_msgs" />
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix} -L${prefix}/lib -lCommsSimulationBasicRadioModel"/>
+  </export>
+
+</package>
+
+
