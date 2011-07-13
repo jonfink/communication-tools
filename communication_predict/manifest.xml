@@ -8,7 +8,7 @@
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/communication_predict</url>
-  <depend package="CommsSimulation"/>
+  <depend package="communication_simulator"/>
   <depend package="nav_msgs"/>
 
   <export>
